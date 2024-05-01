@@ -1,3 +1,4 @@
+import * as mapboxgl from 'mapbox-gl';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
@@ -8,6 +9,8 @@ import { MarkersPageComponent } from './pages/markers-page/markers-page.componen
 import { ZoomRangePageComponent } from './pages/zoom-range-page/zoom-range-page.component';
 import { PropertiesPageComponent } from './pages/properties-page/properties-page.component';
 import { FullScreenPageComponent } from './pages/full-screen-page/full-screen-page.component';
+
+(mapboxgl as any).accessToken = 'pk.eyJ1IjoianVhbmZsb3JlejEzMjYiLCJhIjoiY2x2bzI3Y2xyMGx0YTJzbDlnaHgwdGZ2eiJ9.RoeX1z-5ETD5Im-IndipAQ';
 
 const routes: Routes = [
   {
