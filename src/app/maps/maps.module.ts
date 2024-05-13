@@ -10,6 +10,8 @@ import { ZoomRangePageComponent } from './pages/zoom-range-page/zoom-range-page.
 import { PropertiesPageComponent } from './pages/properties-page/properties-page.component';
 import { FullScreenPageComponent } from './pages/full-screen-page/full-screen-page.component';
 
+import { CounterAloneComponent } from '../alone/components/counter-alone/counter-alone.component';
+
 (mapboxgl as any).accessToken = 'pk.eyJ1IjoianVhbmZsb3JlejEzMjYiLCJhIjoiY2x2bzI3Y2xyMGx0YTJzbDlnaHgwdGZ2eiJ9.RoeX1z-5ETD5Im-IndipAQ';
 
 const routes: Routes = [
@@ -53,6 +55,7 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
+    CounterAloneComponent,
     RouterModule.forChild(routes)
   ]
 })
